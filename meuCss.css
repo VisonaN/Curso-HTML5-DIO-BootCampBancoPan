@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(189, 189, 189);
+}
+
+#title, .subTitle, .postTitle {
+    color: rgb(95, 110, 160);
+}
+
+.postTitle {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.post {
+    background-color: rgba(240, 248, 255, 0.411);
+    padding: 1rem;
+    border: .5rem solid burlywood;
+    border-radius: .5rem;
+    margin: 1rem;
+}
