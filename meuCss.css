@@ -4,19 +4,35 @@ body {
     background-color: rgb(189, 189, 189);
 }
 
+.photo {
+    border: 3px solid #505050;
+    border-radius: 50%;
+}
+
 #title, .subTitle, .postTitle {
     color: rgb(95, 110, 160);
 }
 
 .postTitle {
-    font-size: 2rem;
+    font-size: 16px;
     font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
 }
 
 .post {
     background-color: rgba(240, 248, 255, 0.411);
-    padding: 1rem;
-    border: .5rem solid burlywood;
-    border-radius: .5rem;
-    margin: 1rem;
+    padding: 15px;
+    border: 3px solid burlywood;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.postContent {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.textoImagem {
+    margin-bottom: 15px;
 }
