@@ -2,11 +2,20 @@
 
 body {
     background-color: rgb(189, 189, 189);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 90dvw;
+    max-height: 90dvw;
+    margin: auto;
 }
 
 .photo {
     border: 3px solid #505050;
     border-radius: 50%;
+}
+
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 #title, .subTitle, .postTitle {
@@ -31,8 +40,26 @@ body {
 .postContent {
     margin: 0;
     margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
 }
 
 .textoImagem {
     margin-bottom: 15px;
+    width: 100%;
+}
+
+a {
+    text-decoration: line-through;
+    color: #505050;
+}
+
+.contactsList {
+    list-style-type: none;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.contactsList li a {
+    text-decoration: none;
 }
