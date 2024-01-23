@@ -10,24 +10,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>Olá sou da DOM</h1>
-        <div class="card">
-            <div class="card__left">
-                <span>By Paulo Visoná</span>
-                <a href="#">Darth Vader contrata Devs</a>
-                <p>Darth Vader procuara desenvolvedores que sabem trabalhar com componentes</p>
-            </div>
-            <div class="card__right">
-                <img src="/desafio-01/assets/images/minion-2201004_640.png" alt="">
-            </div>
-        </div>
+        <card-news
+            autor="Paulo Visoná"
+            title="Darth Vader Contrata"
+            link-url="www.google.com"
+            photo="/desafio-01/assets/images/minion-2201004_640.png"
+            content="Darth Vader procuara desenvolvedores que sabem trabalhar com componentes."
+        ></card-news>
+        <card-news
+            title="Minions Usam Angular"
+            link-url="www.google.com/minions"
+            photo="/desafio-01/assets/images/minion-2201004_640.png"
+            content="Minions dão discurso acalorado e convencem império a agir 'Banana!!'."
+        ></card-news>
     </div>
-    <card-news
-        autor="Paulo"
-        title="Darth Vader Contrata"
-        link-url="www.google.com"
-        content="Darth Vader procuara desenvolvedores que sabem trabalhar com componentes"
-    >
-    </card-news>
 </body>
 </html>

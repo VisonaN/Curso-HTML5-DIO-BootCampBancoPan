@@ -32,7 +32,7 @@ class Cardnews extends HTMLElement {
         cardRight.setAttribute("class", "card__right");
 
         const newsImage = document.createElement("img");
-        newsImage.src = "/desafio-01/assets/images/minion-2201004_640.png";
+        newsImage.src = this.getAttribute("photo") || "/desafio-01/assets/images/default-image.jpg";
         newsImage.alt = "Foto do Minion Vader";
 
         cardRight.appendChild(newsImage);
@@ -44,7 +44,44 @@ class Cardnews extends HTMLElement {
     }
 
     styles() {
+        const style = document.createElement("style");
+        style.textContent = `
+        .card {
+            width: 80%;
+            box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 9px 27px 0px rgba(0, 0, 0, 0.75);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .card__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+        }
+        
+        .card__left > span {
+            font-weight: 400;
+            color: rgb(95, 95, 95);
+        }
+        
+        .card__left > a {
+            margin-top: 15px;
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .card__left > p {
+            color: gray;
+        }
+        `;
 
+        return style;
     }
 }
 
