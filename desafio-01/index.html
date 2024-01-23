@@ -6,7 +6,7 @@
     <title>PORTAL DE NOTÍCIAS GALÁCTICO</title>
     <link rel="stylesheet" href="/desafio-01/assets/styles/card.css">
     <script src="/desafio-01/src/components/cardNews.js" defer></script>
-    <script src="/desafio-01/src/components/TituloDinamico.js" defer></script>
+    <script src="/desafio-01/src/components/TituloDinamico.js" defer></script> <!--Sempre usar o defer depois do componente se não dá bug-->
 </head>
 <body>
     <div class="container">
@@ -22,9 +22,12 @@
             </div>
         </div>
     </div>
-
-    <card-news></card-news>
-    <titulo-dinamico titulo="Funcionaa"></titulo-dinamico>
-    <titulo-dinamico titulo="alow"></titulo-dinamico>
+    <card-news
+        autor="Paulo"
+        title="Darth Vader Contrata"
+        link-url="www.google.com"
+        content="Darth Vader procuara desenvolvedores que sabem trabalhar com componentes"
+    >
+    </card-news>
 </body>
 </html>
